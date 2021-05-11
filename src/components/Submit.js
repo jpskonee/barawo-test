@@ -25,7 +25,6 @@ const Submit = () => {
     const [account, setAccount] = useState("")
     const [phone, setPhone] = useState("")
     const [details, setDetails] = useState("")
-    const [count, setCount] = useState(0)
 
 
     const handleScammerC = (event) => {
@@ -50,7 +49,6 @@ const Submit = () => {
     const handleClick = (event) => {
 
         const addData = async () => {
-            const newCount = setCount(count + 1)
             await barawos.doc().set({
                 key: `BRW${Date.now().toString()}${Math.floor(Math.random() * 1000)}`,
                 name: scammer,
@@ -59,7 +57,6 @@ const Submit = () => {
                 account: account,
                 phone: phone,
                 details: details,
-                count: count + 1,
                 timeStamp: firebase.firestore.FieldValue.serverTimestamp(),
             })
 

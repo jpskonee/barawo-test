@@ -86,7 +86,6 @@ const Read = () => {
                         <div key={data.key}>
                         <h3>{data.name}</h3>
                         <p>Bank: {data.bank}</p>
-                        <p>Reported Cases: {data.count}</p>
                         <p>Account: {data.account}</p>
                         <p>Phone: {data.phone}</p>
                         <p>Amount: {data.amount}</p>
@@ -110,7 +109,6 @@ const Read = () => {
                             {console.log("me")}
                         <h2>Name: {data.name}</h2>
                         <p>Bank: {data.bank}</p>
-                        <p>Reported Cases: {data.count}</p>
                         <p>Account: {data.account}</p>
                         <p>Phone: {data.phone}</p>
                         <p>Amount: {data.amount}</p>
